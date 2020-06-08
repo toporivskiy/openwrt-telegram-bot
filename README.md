@@ -3,21 +3,21 @@
 
 1. Вам нужно установить пакеты python3, python3-setuptool, python3-pip (можно через браузер, а можно через терминал). 
 
-opkg update
+*opkg update*
 
-opkg install python3
+*opkg install python3*
 
-opkg install python3-setuptool
+*opkg install python3-setuptool*
 
-opkg install python3-pip
+*opkg install python3-pip*
 
 2. Далее обновим pip.
 
-pip3 install --upgrade pip
+*pip3 install --upgrade pip*
 
 3. Потом через командную строку установить pyTelegramBotAPI и все библиотеки которые вы используете в боте.
 
-pip3 install pyTelegramBotAPI
+*pip3 install pyTelegramBotAPI*
 
 *Если будет MemoryError значит примонтируйте swap флешку (мне помогло 256 Мб свапа).
 
@@ -33,10 +33,10 @@ pip3 install pyTelegramBotAPI
 
 5. Далее пишем в командной строке роутера (через PuTTY):
 
-chmod +x -R /usr/lib/telebot/*
+*chmod +x -R /usr/lib/telebot/**
 
-chmod +x /etc/init.d/your_service_name
+*chmod +x /etc/init.d/your_service_name*
 
-service your_service_name enable
+*service your_service_name enable*
 
 Бот размещён на вашем роутере и запущен.
