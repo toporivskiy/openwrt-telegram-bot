@@ -35,6 +35,6 @@
 
 *chmod +x /etc/init.d/your_bot_name*
 
-*service your_service_name enable*
+*service your_bot_name enable*
 
 **Бот размещён на вашем роутере и запущен.**
