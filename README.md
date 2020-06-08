@@ -27,15 +27,13 @@
 
 *Не забудьте поменять в этом скрипте "your_bot_name" на название вашого файла который вы зальёте в следующем шаге.
 
-**Название скрипта запуска (service) может быть любое
-
 **4.2 Телеграмм бот написаный на python заливаем по пути /usr/lib/telebot/your_bot_name.py**
 
 **5. Далее пишем в командной строке роутера (через PuTTY):**
 
 *chmod +x -R /usr/lib/telebot/**
 
-*chmod +x /etc/init.d/your_service_name*
+*chmod +x /etc/init.d/your_bot_name*
 
 *service your_service_name enable*
 
