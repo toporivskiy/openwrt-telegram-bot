@@ -4,16 +4,16 @@
 START=99
 
 start() {
-	if [ ! -f "/var/run/where_cheaper_bot.pid" ]; then
-		echo "1" > /var/run/where_cheaper_bot.pid
-		python3 /usr/lib/telebot/where_cheaper_bot.py >/dev/null 2>&1 &
+	if [ ! -f "/var/run/your_bot_name.pid" ]; then
+		echo "1" > /var/run/your_bot_name.pid
+		python3 /usr/lib/telebot/your_bot_name.py >/dev/null 2>&1 &
 	fi
 	return 0
 }
 
 stop() {
-	rm -f /var/run/where_cheaper_bot.pid
-	kill $(pgrep -f telebot/where_cheaper_bot.py) >/dev/null 2>&1
+	rm -f /var/run/your_bot_name.pid
+	kill $(pgrep -f telebot/your_bot_name.py) >/dev/null 2>&1
 }
 
 restart(){
